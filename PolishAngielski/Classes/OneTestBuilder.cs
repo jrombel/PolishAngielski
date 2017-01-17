@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Windows;
 
 namespace PolishAngielski.Models
 {
@@ -28,19 +29,12 @@ namespace PolishAngielski.Models
             for (int i = 0; i < numberOfQuestions; i++)
             {
                 index = rnd.Next(Program.words.wordList.Count);
-
-                Word tmpWord = Program.words.wordList.ElementAt(index);
-
-                //test
-                /*Word tmpWord = Program.words.wordList.ElementAt(index);
-                if (nativeLanguage)
+                
+                IWord tmpWord = Program.words.wordList.ElementAt(index);
+                if(useAdjectives)
                     tmpWord = new Adjective(tmpWord);
-                else
-                    tmpWord = Program.words.wordList.ElementAt(index);
-                MessageBox.Show(tmpWord.GetPolish());*/
-                //test
                 Boolean absent = true;
-                foreach (Word word in test.questions)
+                foreach (IWord word in test.questions)
                 {
                     if (tmpWord.Equals(word))
                         absent = false;
@@ -59,7 +53,9 @@ namespace PolishAngielski.Models
                         else
                         {
                             index = rnd.Next(Program.words.wordList.Count);
-                            Word tmpWord2 = Program.words.wordList.ElementAt(index);
+                            IWord tmpWord2 = Program.words.wordList.ElementAt(index);
+                            if (useAdjectives)
+                                tmpWord2 = new Adjective(tmpWord2);
                             if (tmpWord2.Equals(tmpWord))
                                 oneMoreTime = true;
                             for (int k = 0; k < j; k++)
@@ -72,7 +68,7 @@ namespace PolishAngielski.Models
                                 j--;
                             }
                             else
-                                tmpAnswer.answers.Add(Program.words.wordList.ElementAt(index));
+                                tmpAnswer.answers.Add(tmpWord2);
                         }
                     }
                     test.answers.Add(tmpAnswer);

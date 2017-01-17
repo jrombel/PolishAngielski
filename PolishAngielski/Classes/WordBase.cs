@@ -5,11 +5,11 @@ namespace PolishAngielski.Models
     public class WordBase
     {
         private static WordBase instance = new WordBase();
-        public ObservableCollection<Word> wordList { get; set; }
+        public ObservableCollection<IWord> wordList { get; set; }
 
         private WordBase()
         {
-            wordList = new ObservableCollection<Word>();
+            wordList = new ObservableCollection<IWord>();
         }
         public static WordBase getInstance()
         {

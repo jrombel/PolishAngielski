@@ -6,7 +6,7 @@ namespace PolishAngielski.Models
     class OneTest : Test
     {
         public List<Answer> answers;
-        public List<Word> questions;
+        public List<IWord> questions;
         public bool nativeLanguage;
         private int correctAnswers;
         private int wrongAnswers;
@@ -14,7 +14,7 @@ namespace PolishAngielski.Models
         public OneTest()
         {
             answers = new List<Answer>();
-            questions = new List<Word>();
+            questions = new List<IWord>();
             nativeLanguage = false;
         }
         public override bool CheckAnswer(int questionNumber, string answer)

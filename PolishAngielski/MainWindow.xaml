@@ -72,8 +72,7 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <CheckBox Name="addAdjectives_LearnTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Dodawaj przysłówki</CheckBox>
-                            <CheckBox Name="nativeLanguage_LearnTest_cb" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
+                            <CheckBox Name="nativeLanguage_LearnTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
                         </Grid>
                         <Button Click="learnTestMode_Page1_Start_Click" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" Height="60" VerticalAlignment="Bottom">Rozpocznij test</Button>
                     </Grid>
@@ -107,7 +106,7 @@
                             <RowDefinition Height="3*"/>
                             <RowDefinition />
                         </Grid.RowDefinitions>
-                        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" FontSize="28" FontWeight="Bold">Podsumowanie testu</Label>
+                        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" FontSize="28" FontWeight="Bold">Podsumowanie nauki</Label>
                         <Label Name="learnTestMode_Page3_summary_l" Grid.Row="1"/>
                         <Button Click="learnTestMode_Page3_End_Click" Grid.Row="2" Margin="10" Height="60" VerticalAlignment="Bottom">Zakończ</Button>
                     </Grid>
@@ -146,8 +145,8 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <CheckBox Name="addAdjectives_OneTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Dodawaj przysłówki</CheckBox>
-                            <CheckBox Name="nativeLanguage_OneTest_cb" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
+                            <CheckBox Name="addAdjectives_OneTest_cb" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">Dodawaj przymiotniki</CheckBox>
+                            <CheckBox Name="nativeLanguage_OneTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
                         </Grid>
                         <Button Click="oneTestMode_Page1_Start_Click" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" Height="60" VerticalAlignment="Bottom">Rozpocznij test</Button>
                     </Grid>
@@ -220,8 +219,7 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <CheckBox Name="addAdjectives_ManyTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Dodawaj przysłówki</CheckBox>
-                            <CheckBox Name="nativeLanguage_ManyTest_cb" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
+                            <CheckBox Name="nativeLanguage_ManyTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
                         </Grid>
                         <Button Click="manyTestMode_Page1_Start_Click" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" Height="60" VerticalAlignment="Bottom">Rozpocznij test</Button>
                     </Grid>
@@ -294,8 +292,7 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <CheckBox Name="addAdjectives_WriteTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Dodawaj przysłówki</CheckBox>
-                            <CheckBox Name="nativeLanguage_WriteTest_cb" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
+                            <CheckBox Name="nativeLanguage_WriteTest_cb" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">Z polskiego na angielski</CheckBox>
                         </Grid>
                         <Button Click="writeTestMode_Page1_Start_Click" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" Height="60" VerticalAlignment="Bottom">Rozpocznij test</Button>
                     </Grid>
@@ -310,7 +307,6 @@
                         <Label Name="writeTestMode_Page2_wordToTranslate_l" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" FontSize="28" FontWeight="Bold">pytanie</Label>
                         <TextBox Name="writeTestMode_Page2_writeWord" Height="20" Width="300" Grid.Row="2" HorizontalAlignment="Center"/>
                         <Button Click="writeTestMode_Page2_Next_Click" Grid.Row="3" Margin="10" Height="60" VerticalAlignment="Bottom">Przejdź dalej</Button>
-
                     </Grid>
                     <Grid Name="writeTestMode_Page3" Visibility="Collapsed">
                         <Grid.RowDefinitions>

@@ -2,7 +2,7 @@
 
 namespace PolishAngielski.Models
 {
-    public class Word
+    public class Word : IWord
     {
         public String polish { get; set; }
         public String english { get; set; }
@@ -23,19 +23,19 @@ namespace PolishAngielski.Models
             this.category = category;
             this.difficulty = difficulty;
         }
-        public String GetPolish()
+        public override String GetPolish()
         {
             return this.polish;
         }
-        public String GetEnglish()
+        public override String GetEnglish()
         {
             return this.english;
         }
-        public int GetDifficulty()
+        public override int GetDifficulty()
         {
             return this.difficulty;
         }
-        public String GetCategory()
+        public override String GetCategory()
         {
             return this.category;
         }

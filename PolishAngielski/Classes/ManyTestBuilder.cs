@@ -29,9 +29,9 @@ namespace PolishAngielski.Models
             for (int i = 0; i < numberOfQuestions; i++)
             {
                 index = rnd.Next(Program.words.wordList.Count);
-                Word tmpWord = Program.words.wordList.ElementAt(index);
+                IWord tmpWord = Program.words.wordList.ElementAt(index);
                 Boolean absent = true;
-                foreach (Word word in test.questions)
+                foreach (IWord word in test.questions)
                 {
                     if (tmpWord.Equals(word))
                         absent = false;
@@ -50,7 +50,7 @@ namespace PolishAngielski.Models
                         else
                         {
                             index = rnd.Next(Program.words.wordList.Count);
-                            Word tmpWord2 = Program.words.wordList.ElementAt(index);
+                            IWord tmpWord2 = Program.words.wordList.ElementAt(index);
                             if (tmpWord2.Equals(tmpWord))
                                 oneMoreTime = true;
                             for (int k = 0; k < j; k++)
