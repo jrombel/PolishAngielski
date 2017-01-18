@@ -1,156 +1,171 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="PolishAngielski.App" Collapsed="true">
-    <Position X="13.5" Y="0.5" Width="1.5" />
+  <Class Name="PolishAngielski.App">
+    <Position X="16" Y="13" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="10" Y="1.5" Width="1.5" />
+  <Class Name="PolishAngielski.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="0.5" Width="5.75" />
     <TypeIdentifier>
       <HashCode>EIMAAI0AiQEwBZgAAmCLhBChAIASmwCxAAQwioDMDhU=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="PolishAngielski.Models.Adjective" Collapsed="true">
-    <Position X="7.75" Y="9.25" Width="1.5" />
+  <Class Name="PolishAngielski.Models.Adjective">
+    <Position X="18.5" Y="6" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIABAAAAAAAEAAAAAAAAAAAAgAQCAAAIAAAAAAA=</HashCode>
       <FileName>Classes\Adjective.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.AdjectiveBase" Collapsed="true">
-    <Position X="10" Y="0.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.AdjectiveBase">
+    <Position X="13.75" Y="9.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAASAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\AdjectiveBase.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.Answer" Collapsed="true">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.Answer">
+    <Position X="18" Y="12" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Answer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.LearnTest" Collapsed="true">
-    <Position X="8" Y="4.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.LearnTest">
+    <Position X="0.5" Y="8.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAIMAAAAAACAAAAAARAAAAAAAAgAAAACAA=</HashCode>
       <FileName>Classes\LearnTest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.LearnTestBuilder" Collapsed="true">
-    <Position X="3.25" Y="1.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.LearnTestBuilder">
+    <Position X="0.5" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAIAAAIAAACCAAAAQAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Classes\LearnTestBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.ManyTest" Collapsed="true">
-    <Position X="10.25" Y="4.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.ManyTest">
+    <Position X="6" Y="8.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAIMAAAAAACAAAAAARAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ManyTest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.ManyTestBuilder" Collapsed="true">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.ManyTestBuilder">
+    <Position X="6" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAIAAAIAAACCAAAAQAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ManyTestBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.OneTest" Collapsed="true">
-    <Position X="14.75" Y="4.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.OneTest">
+    <Position X="3.25" Y="8.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAIMAAAAAACAAAAAARAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\OneTest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PolishAngielski.Models.OneTestBuilder">
-    <Position X="0.5" Y="1.75" Width="2.5" />
+    <Position X="3.25" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAIAAAIAAACCAAAAQAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Classes\OneTestBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.Program" Collapsed="true">
-    <Position X="11.75" Y="1.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.Program">
+    <Position X="13.75" Y="12" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAEAA=</HashCode>
       <FileName>Classes\Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.Test" Collapsed="true">
-    <Position X="11.25" Y="3.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.Test">
+    <Position X="4" Y="6.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Test.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.TestBuilder" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.TestBuilder">
+    <Position X="3.25" Y="0.5" Width="5.25" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\TestBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.TestDirector" Collapsed="true">
-    <Position X="11.75" Y="2.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.TestDirector">
+    <Position X="16" Y="12" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\TestDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.Word" Collapsed="true">
-    <Position X="7.75" Y="6.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.Word">
+    <Position X="13.75" Y="3" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIABAAAAAAAEAAAAAAAAAAAAgAQCAAAIAAAAAAA=</HashCode>
       <FileName>Classes\Word.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.WordBase" Collapsed="true">
-    <Position X="13.5" Y="2.5" Width="1.5" />
+  <Class Name="PolishAngielski.Models.WordBase">
+    <Position X="13.75" Y="6.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAgAAAAAAAAA=</HashCode>
       <FileName>Classes\WordBase.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.WordDecorator" Collapsed="true">
-    <Position X="7.75" Y="7.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.WordDecorator">
+    <Position X="18.5" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAEAAAAAAAAAAAAgAACAAAAAAAAAAA=</HashCode>
       <FileName>Classes\WordDecorator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.WriteTest" Collapsed="true">
-    <Position X="12.5" Y="4.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.WriteTest">
+    <Position X="8.75" Y="8.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAIMAAAAAACAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\WriteTest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Models.WriteTestBuilder" Collapsed="true">
-    <Position X="7.5" Y="1.75" Width="1.5" />
+  <Class Name="PolishAngielski.Models.WriteTestBuilder">
+    <Position X="8.75" Y="2.25" Width="2.5" />
+    <InheritanceLine Type="PolishAngielski.Models.TestBuilder" FixedToPoint="true">
+      <Path>
+        <Point X="5.875" Y="1.796" />
+        <Point X="5.875" Y="2.01" />
+        <Point X="10.062" Y="2.01" />
+        <Point X="10.062" Y="2.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAIAAAIAAACCAAAAQAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Classes\WriteTestBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Properties.Resources" Collapsed="true">
-    <Position X="13.5" Y="1.5" Width="1.5" />
+  <Class Name="PolishAngielski.Properties.Resources">
+    <Position X="17.75" Y="9.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
-  <Class Name="PolishAngielski.Properties.Settings" Collapsed="true">
-    <Position X="10" Y="2.5" Width="1.5" />
+  <Class Name="PolishAngielski.Properties.Settings">
+    <Position X="15.25" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PolishAngielski.Models.IWord">
+    <Position X="18.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAEAAAAAAAAAAAAgAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\IWord.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

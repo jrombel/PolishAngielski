@@ -170,7 +170,7 @@ namespace PolishAngielski
             learnTestMode_Page2_answer2.IsChecked = false;
             learnTestMode_Page2_answer3.IsChecked = false;
             learnTestMode_Page2_answer4.IsChecked = false;
-            if (learnTest.nativeLanguage)
+            if (!learnTest.nativeLanguage)
             {
                 learnTestMode_Page2_wordToTranslate_l.Content = learnTest.questions.ElementAt(questionIndex).GetEnglish();
                 Answer answers = learnTest.answers.ElementAt(questionIndex);
@@ -328,7 +328,7 @@ namespace PolishAngielski
             oneTestMode_Page2_answer2.IsChecked = false;
             oneTestMode_Page2_answer3.IsChecked = false;
             oneTestMode_Page2_answer4.IsChecked = false;
-            if (oneTest.nativeLanguage)
+            if (!oneTest.nativeLanguage)
             {
                 oneTestMode_Page2_wordToTranslate_l.Content = oneTest.questions.ElementAt(questionIndex).GetEnglish();
                 Answer answers = oneTest.answers.ElementAt(questionIndex);
