@@ -12,7 +12,7 @@ namespace PolishAngielski
     public partial class MainWindow : Window
     {
         int minvalue = 1, maxvalue = 100, startvalue = 10;
-        public ObservableCollection<Word> ListOfWords { get; set; }
+        public ObservableCollection<IWord> ListOfWords { get; set; }
         LearnTest learnTest;
         OneTest oneTest;
         ManyTest manyTest;
@@ -151,7 +151,7 @@ namespace PolishAngielski
         private void learnTestMode_Page1_Start_Click(object sender, RoutedEventArgs e)
         {
             LearnTestBuilder learnTestBuilder = new LearnTestBuilder();
-            learnTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_LearnTest.Text), (bool)addAdjectives_LearnTest_cb.IsChecked, (bool)nativeLanguage_LearnTest_cb.IsChecked);
+            learnTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_LearnTest.Text), false, (bool)nativeLanguage_LearnTest_cb.IsChecked);
             learnTestBuilder.PrepareList();
             learnTest = learnTestBuilder.GetTest();
 
@@ -447,7 +447,7 @@ namespace PolishAngielski
         private void manyTestMode_Page1_Start_Click(object sender, RoutedEventArgs e)
         {
             ManyTestBuilder ManyTestBuilder = new ManyTestBuilder();
-            ManyTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_ManyTest.Text), (bool)addAdjectives_ManyTest_cb.IsChecked, (bool)nativeLanguage_ManyTest_cb.IsChecked);
+            ManyTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_ManyTest.Text), false, (bool)nativeLanguage_ManyTest_cb.IsChecked);
             ManyTestBuilder.PrepareList();
             manyTest = ManyTestBuilder.GetTest();
 
@@ -665,7 +665,7 @@ namespace PolishAngielski
         private void writeTestMode_Page1_Start_Click(object sender, RoutedEventArgs e)
         {
             WriteTestBuilder WriteTestBuilder = new WriteTestBuilder();
-            WriteTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_WriteTest.Text), (bool)addAdjectives_WriteTest_cb.IsChecked, (bool)nativeLanguage_WriteTest_cb.IsChecked);
+            WriteTestBuilder.CollectTestInfo(Int32.Parse(NUDTextBox_WriteTest.Text), false, (bool)nativeLanguage_WriteTest_cb.IsChecked);
             WriteTestBuilder.PrepareList();
             writeTest = WriteTestBuilder.GetTest();
 

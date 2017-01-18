@@ -6,7 +6,7 @@ namespace PolishAngielski.Models
     public class LearnTest : Test
     {
         public List<Answer> answers;
-        public List<Word> questions;
+        public List<IWord> questions;
         public bool nativeLanguage;
         public int correctAnswers;
         public int wrongAnswers;
@@ -16,7 +16,7 @@ namespace PolishAngielski.Models
         public LearnTest()
         {
             answers = new List<Answer>();
-            questions = new List<Word>();
+            questions = new List<IWord>();
             nativeLanguage = false;
 
             countCorrect = true;

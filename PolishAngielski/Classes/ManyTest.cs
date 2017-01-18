@@ -7,7 +7,7 @@ namespace PolishAngielski.Models
     class ManyTest : Test
     {
         public List<Answer> answers;
-        public List<Word> questions;
+        public List<IWord> questions;
         public bool nativeLanguage;
         private int correctAnswers;
         private int wrongAnswers;
@@ -15,15 +15,15 @@ namespace PolishAngielski.Models
         public ManyTest()
         {
             answers = new List<Answer>();
-            questions = new List<Word>();
+            questions = new List<IWord>();
             nativeLanguage = false;
         }
         public override bool CheckAnswer(int questionNumber, string answer)
         {
-            List<Word> goodAnswers = new List<Word>();
+            List<IWord> goodAnswers = new List<IWord>();
             foreach (Word i in answers[questionNumber].answers)
             {
-                if (i.category == questions[questionNumber].category)
+                if (i.category == questions[questionNumber].GetCategory())
                     goodAnswers.Add(i);
             }
 
@@ -33,7 +33,7 @@ namespace PolishAngielski.Models
                 bool everyAnswersGood = true;
                 for (int i = 0; i < answer.Length; i++)
                 {
-                    if (questions[questionNumber].category != answers[questionNumber].answers.ElementAt(answerIndexes.ElementAt(i)).category)
+                    if (questions[questionNumber].GetCategory() != answers[questionNumber].answers.ElementAt(answerIndexes.ElementAt(i)).GetCategory())
                     {
                         everyAnswersGood = false;
                     }

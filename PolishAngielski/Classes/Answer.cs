@@ -5,17 +5,17 @@ namespace PolishAngielski.Models
 {
     public class Answer
     {
-        public List<Word> answers;
+        public List<IWord> answers;
         public Answer()
         {
-            answers = new List<Word>();
+            answers = new List<IWord>();
         }
-        public Answer(List<Word> providedAnswers)
+        public Answer(List<IWord> providedAnswers)
         {
             answers = providedAnswers;
         }
 
-        public Word getConcreteAnswer(int index)
+        public IWord getConcreteAnswer(int index)
         {
             return answers.ElementAt(index);
         }

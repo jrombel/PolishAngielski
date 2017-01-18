@@ -1,25 +1,29 @@
 ﻿namespace PolishAngielski.Models
 {
-    public abstract class WordDecorator : Word
+    public class WordDecorator : IWord
     {
-        private Word word;
+        protected IWord word;
 
-        public WordDecorator(Word word)
+        public WordDecorator(IWord word)
         {
             this.word = word;
         }
 
-        public string GetPolish()
+        public override string GetPolish()
         {
             return word.GetPolish();
         }
-        public string GetEnglish()
+        public override string GetEnglish()
         {
             return word.GetEnglish();
         }
-        public int GetDifficulty()
+        public override int GetDifficulty()
         {
             return word.GetDifficulty();
+        }
+        public override string GetCategory()
+        {
+            return word.GetCategory();
         }
     }
 }

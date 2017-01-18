@@ -66,6 +66,7 @@
     <Compile Include="Classes\Adjective.cs" />
     <Compile Include="Classes\AdjectiveBase.cs" />
     <Compile Include="Classes\Answer.cs" />
+    <Compile Include="Classes\IWord.cs" />
     <Compile Include="Classes\LearnTest.cs" />
     <Compile Include="Classes\LearnTestBuilder.cs" />
     <Compile Include="Classes\ManyTest.cs" />

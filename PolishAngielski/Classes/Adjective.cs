@@ -2,32 +2,41 @@
 
 namespace PolishAngielski.Models
 {
-    class Adjective : WordDecorator
+    public class Adjective : WordDecorator
     {
         public String polish { get; set; }
         public String english { get; set; }
         public String category { get; set; }
         public int difficulty { get; set; }
 
-        public Adjective(Word word) : base(word)
+
+        //private int index;
+
+        public Adjective(IWord word) : base(word)
         {
+            //Random rnd = new Random();
+            //index = rnd.Next(Program.adjectives.adjectiveList.Count);
 
         }
-        public String GetPolish()
+        public override String GetPolish()
         {
-            return ("smutny " + base.GetPolish());
+            Random rnd = new Random();
+            int index = rnd.Next(Program.adjectives.adjectiveList.Count);
+            return (Program.adjectives.adjectiveList[index].GetPolish() + " " + base.GetPolish());
         }
-        public String GetEnglish()
+        public override String GetEnglish()
         {
-            return ("sad" + base.GetEnglish());
+            Random rnd = new Random();
+            int index = rnd.Next(Program.adjectives.adjectiveList.Count);
+            return (Program.adjectives.adjectiveList[index].GetEnglish() + " " + base.GetEnglish());
         }
-        public int GetDifficulty()
+        public override int GetDifficulty()
         {
             return this.difficulty;
         }
-        public String GetCategory()
+        public override String GetCategory()
         {
-            return this.category;
+            return base.GetCategory();
         }
     }
 }

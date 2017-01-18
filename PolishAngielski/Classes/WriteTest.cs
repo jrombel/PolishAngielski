@@ -5,18 +5,18 @@ namespace PolishAngielski.Models
 {
     class WriteTest : Test
     {
-        public List<Word> questions;
+        public List<IWord> questions;
         public bool nativeLanguage;
         private int correctAnswers;
         private int wrongAnswers;
         public WriteTest()
         {
-            questions = new List<Word>();
+            questions = new List<IWord>();
             nativeLanguage = false;
         }
         public override bool CheckAnswer(int questionNumber, string answer)
         {
-            if (questions[questionNumber].english == answer || questions[questionNumber].polish == answer)
+            if (questions[questionNumber].GetEnglish() == answer || questions[questionNumber].GetPolish() == answer)
             {
                 correctAnswers++;
                 return true;
