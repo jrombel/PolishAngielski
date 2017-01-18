@@ -11,7 +11,7 @@ namespace PolishAngielski
 {
     public partial class MainWindow : Window
     {
-        int minvalue = 1, maxvalue = 100, startvalue = 10;
+        int minvalue, maxvalue, startvalue;
         public ObservableCollection<IWord> ListOfWords { get; set; }
         LearnTest learnTest;
         OneTest oneTest;
@@ -20,12 +20,16 @@ namespace PolishAngielski
         int questionIndex;
         public MainWindow()
         {
-            InitializeComponent();
-
             Program.words = WordBase.getInstance();
             Program.adjectives = AdjectiveBase.getInstance();
             Program.LoadFromFile();
             ListOfWords = Program.words.wordList;
+
+            minvalue = 1;
+            maxvalue = Program.words.wordList.Count;
+            startvalue = 10;
+
+            InitializeComponent();
 
             wordList_lv.ItemsSource = ListOfWords;
             NUDTextBox_LearnTest.Text = startvalue.ToString();
