@@ -24,7 +24,7 @@ namespace PolishAngielski.Models
         public override bool CheckAnswer(int questionNumber, string answer)
         {
             int answerIndex = int.Parse(answer);
-            if(answerIndex == -1)
+            if (answerIndex == -1)
             {
                 wrongAnswers++;
                 return false;
@@ -38,7 +38,7 @@ namespace PolishAngielski.Models
             {
                 answers.RemoveAt(questionNumber);
                 questions.RemoveAt(questionNumber);
-                if(countCorrect)
+                if (countCorrect)
                     correctAnswers++;
                 allAnswers++;
                 return true;
@@ -54,7 +54,7 @@ namespace PolishAngielski.Models
             String result = "";
             try
             {
-                result = "Poprawne odpowiedzi: " + correctAnswers + "\nBłędne odpowiedzi: " + wrongAnswers + 
+                result = "Poprawne odpowiedzi: " + correctAnswers + "\nBłędne odpowiedzi: " + wrongAnswers +
                     "\nWszyskie pytania: " + allAnswers +
                     "\n\nWynik procentowy: " + (correctAnswers * 100) / (allAnswers) + "%";
             }

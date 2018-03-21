@@ -29,9 +29,9 @@ namespace PolishAngielski.Models
             for (int i = 0; i < numberOfQuestions; i++)
             {
                 index = rnd.Next(Program.words.wordList.Count);
-                
+
                 IWord tmpWord = Program.words.wordList.ElementAt(index);
-                if(useAdjectives)
+                if (useAdjectives)
                     tmpWord = new Adjective(tmpWord);
                 Boolean absent = true;
                 foreach (IWord word in test.questions)
